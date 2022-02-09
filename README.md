@@ -7,4 +7,4 @@ Juego del Ahorcado con Javascript y Canvas
 
 </br></br>
 
-[Demo](https://pmarchionno.github.io/encriptador/)
+[Demo](https://pmarchionno.github.io/Juego-del-Ahorcado/)
