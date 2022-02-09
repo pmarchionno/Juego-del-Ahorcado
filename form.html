@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h2 class="titulo">Ahorcado</h2>
+    </div>
+    <div class="body-content">
+      <div>
+        <img class="image-alura" src="./images/alura.png" alt="alura" />
+      </div>
+    </div>
+    <div style="text-align: center; padding-top: 100px; padding-bottom: 10px;">
+      <input
+        class="text-input"
+        type="text"
+        id="input-new-word"
+        placeholder="Escriba una nueva palabra"
+        onkeyup="this.value=onlyCharacters(this.value)"
+      />
+    </div>
+    <div class="btn-content">
+      <button class="btn btn-principal-2" id="add-word">AGREGAR PALABRA</button>
+      <button
+        class="btn btn-to-home"
+        id="new-game"
+        onclick="javascript:window.location.href='index.html';"
+      >
+        Cancelar
+      </button>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="ahorcado.js"></script>
+    <script>
+      function onlyCharacters(string) {
+        let out = "";
+        const reg = "^[a-zA-Z\\s]+$";
+        let regExp = new RegExp(reg);
+
+        for (let i = 0; i < string.length; i++) {
+          if (regExp.test(string.charAt(i))) out += string.charAt(i);
+        }
+        return out;
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="content">
+      <h2 class="titulo">Ahorcado</h2>
+    </div>
+    <div class="body-content">
+      <div>
+        <img class="image-alura" src="./images/alura.png" alt="alura" />
+      </div>
+    </div>
+    <div style="text-align: center">
+      <canvas id="ahorcado" width="960" height="320"></canvas>
+      <a id="word-result" class="word-result"></a>
+    </div>
+
+    <div class="word-content">
+      <a name="word-ahorcado" class="word-ahorcado"></a>
+      <a name="word-ahorcado-fail" class="word-ahorcado-fail"></a>
+    </div>
+
+    <div>
+    </div>
+
+    <form id="formulario">
+      <label for="letra" class="text-info" id="texto">Ingresa una letra</label>
+      <input
+        type="text"
+        id="letra"
+        autocomplete="off"
+        class="form-control"
+        maxlength="1"
+        pattern="[a-z]"
+      />
+      <input type="submit" id="btn" class="btn btn-boom" value="Boom" />
+    </form>
+
+    <div class="btn-content">
+      <button
+        class="btn btn-principal"
+        id="new-game"
+        onclick="javascript:window.location.reload();"
+      >
+        Nuevo Juego
+      </button>
+
+      <button
+        class="btn btn-surrender"
+        id="new-game"
+        onclick="javascript:window.location.href='index.html';"
+      >
+        Desistir
+      </button>
+    </div>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="ahorcado.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+  </body>
+</html>

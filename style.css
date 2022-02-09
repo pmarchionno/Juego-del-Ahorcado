@@ -1,0 +1,429 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url("https://allfont.es/allfont.css?fonts=amatic-sc-regular");
+  font-weight: 36;
+}
+
+@import url(https://allfont.es/allfont.css?fonts=amatic-sc-regular);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(243, 245, 252);
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Helvetica Neue", "raleway";
+  font-size: 14px;
+  padding: 5px 10px 5px 10px;
+  width: auto;
+}
+
+.content {
+  border-color: cornflowerblue;
+  background-color: rgb(243, 245, 252);
+  max-width: 1124px;
+}
+
+.titulo {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 36px;
+  width: 100%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(45deg, rgba(0, 120, 231, 0.66), #0078e7);
+}
+
+.btn {
+  border: 0;
+  color: white;
+  font-weight: bold;
+
+  padding: 10px;
+  margin: 10px;
+  border-radius: 0.5em;
+}
+
+.btn-boom {
+  background: linear-gradient(45deg, rgba(0, 120, 231, 0.66), #0078e7);
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 340px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+}
+
+.body-content {
+  display: flex;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.body-content-ahorcado {
+  display: flex;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.body-content-form {
+  display: flex;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.image-alura {
+  display: flex;
+  padding: 20px 0px 0 20px;
+}
+
+.body-content-ahorcado img {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.body-content-form img {
+  text-align: center;
+  margin: 50px 0px;
+}
+
+.cuerpo {
+  height: 100%;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.twitter-share-button {
+  position: absolute;
+  top: 0.5em;
+  right: 4em;
+  margin-right: -70px;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+#ahorcado-graph {
+  box-shadow: 0px 0px 2px #1f1f1f;
+  display: block;
+  margin: 0 auto;
+  width: 960px;
+  height: 420px;
+}
+
+#contenedor {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  max-width: 400px;
+  max-height: 400px;
+  margin-bottom: 40px !important;
+}
+
+#twitter {
+  text-align: right;
+  z-index: 10;
+  color: #0080ff;
+}
+
+#twitter:visited,
+#twitter:link {
+  color: #0080ff;
+}
+
+#twitter:hover {
+  color: #7dbeff;
+}
+
+#ganadas {
+  background-color: #0080ff;
+  border-radius: 6px 0 0 0;
+  color: white;
+  font-size: 1.4em;
+  left: -1.5em;
+  padding-left: 0.2em;
+  padding-right: 1em;
+  position: absolute;
+  top: 2em;
+  z-index: -1;
+}
+
+#perdidas {
+  background-color: #ff0000;
+  border-radius: 0 0 0 6px;
+  color: white;
+  font-size: 1.4em;
+  left: -1.5em;
+  padding-left: 0.2em;
+  padding-right: 1em;
+  position: absolute;
+  top: 3em;
+  z-index: -1;
+}
+
+#puestas {
+  background-color: #0080ff;
+  border-radius: 0 4px 4px 0;
+  left: 400px;
+  margin-top: 0px;
+  padding-left: 0;
+  position: absolute;
+  top: 3em;
+}
+
+#puestas li {
+  list-style: none;
+  color: #ffffff;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 2px;
+  padding-left: 3px;
+}
+
+#letra {
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  height: 34px;
+  margin-top: 2px;
+  margin-right: 0px;
+  padding: 7px 8px;
+  font-size: 17px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  vertical-align: middle;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+#texto {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #31708f;
+  padding-right: 5px;
+  font-size: 1.15rem;
+}
+
+#btn {
+  color: #ffffff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 6px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.btn-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.btn-principal {
+  background: linear-gradient(45deg, rgba(0, 120, 231, 0.66), #0078e7);
+  box-shadow: 0 14px 50px -4px hsla(0, 0%, 0%, 0.15);
+  color: white;
+  font-size: 1.15rem;
+  cursor: pointer;
+  width: 145px;
+  height: 43px;
+}
+
+.btn-principal-2 {
+  background: linear-gradient(45deg, rgba(0, 120, 231, 0.66), #0078e7);
+  box-shadow: 0 14px 50px -4px hsla(0, 0%, 0%, 0.15);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 205;
+  height: 43px;
+}
+
+.btn-new-game {
+  width: 200px;
+  cursor: pointer;
+  text-decoration: none;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn-new-word {
+  width: 200;
+  height: 40px;
+  color: rgb(10, 56, 113);
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px rgb(10, 56, 113);
+  border-style: groove;
+  display: inline-block;
+  line-height: normal;
+}
+
+.btn-surrender {
+  width: 145px;
+  height: 43px;
+  font-size: 1rem;
+  color: rgb(10, 56, 113);
+  background-color: transparent;
+  border: 2px rgb(10, 56, 113);
+  border-style: groove;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-to-home {
+  width: 205;
+  height: 43px;
+  font-size: 1rem;
+  color: rgb(10, 56, 113);
+  background-color: transparent;
+  border: 2px rgb(10, 56, 113);
+  border-style: groove;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+form {
+  margin-top: 6px;
+}
+
+.word-ahorcado {
+  font-family: Georgia, serif;
+  font-size: 50px;
+  letter-spacing: 35px;
+  padding: 5px;
+
+  text-align: center;
+  word-spacing: 3px;
+  color: rgb(10, 56, 113);
+}
+
+.word-ahorcado-dash {
+  font-family: Georgia, serif;
+  font-size: 80px;
+  letter-spacing: 20px;
+  padding: 5px;
+
+  text-align: center;
+  word-spacing: 3px;
+  color: rgb(10, 56, 113);
+}
+
+.word-ahorcado-fail {
+  font-family: Georgia, serif;
+  font-size: 30px;
+  letter-spacing: 35px;
+  padding: 5px;
+
+  text-align: center;
+  word-spacing: 3px;
+  color: grey;
+  height: 45px;
+}
+
+.word-content {
+  display: grid;
+}
+
+.form-control {
+  text-transform: uppercase;
+}
+
+.word-result {
+  display: grid;
+  float: initial;
+  align-items: center;
+  translate: 0 -10px;
+  text-shadow: 0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em #9dc9f2,
+    0 0 0.6em #0078e7, 0 0 0.8em #0078e7, 0 0 1em #0078e7, 0 0 1.2em #0078e7;
+  color: #fff;
+  font-family: "Sofia", sans-serif;
+  font-size: 30px;
+}
+
+.visibility-none {
+  visibility: hidden;
+}
+
+.index-content {
+  display: grid;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    border-color: cornflowerblue;
+    background-color: rgb(243, 245, 252);
+    max-width: 600;
+  }
+
+  form {
+    margin-top: 6px;
+  }
+
+  #ahorcado {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  .btn-content {
+    display: grid;
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .word-result {
+    display: grid;
+    float: initial;
+    align-items: center;
+    translate: 0 -5px;
+  }
+
+  .text-input {
+    width: 180px;
+  }
+
+  .word-ahorcado-fail {
+    width: max-content;
+  }
+}
