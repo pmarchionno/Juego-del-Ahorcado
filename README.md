@@ -1,10 +1,15 @@
 # Juego-del-Ahorcado
 Juego del Ahorcado con Javascript y Canvas
 
-![encriptado_desktop_demo1](http://g.recordit.co/tMnItqM1bb.gif)
-![encriptado_desktopo_demo2](http://g.recordit.co/l0FlwPaPk5.gif)
-![encriptado_celular_demo](http://g.recordit.co/vVmPuaqHaQ.gif)
+Desktop
+</br>
+<img src="http://g.recordit.co/tMnItqM1bb.gif" width="500" height="405" />
+<img src="http://g.recordit.co/l0FlwPaPk5.gif" width="500" height="405" />
 
-</br></br>
+Celular
+</br>
+<img src="http://g.recordit.co/vVmPuaqHaQ.gif" width="245" height="390" />
+
+</br>
 
 [Demo](https://pmarchionno.github.io/Juego-del-Ahorcado/)
