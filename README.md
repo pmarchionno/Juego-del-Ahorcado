@@ -1,4 +1,4 @@
-# Juego-del-Ahorcado
+# Juego del Ahorcado
 Juego del Ahorcado con Javascript y Canvas
 
 Desktop
